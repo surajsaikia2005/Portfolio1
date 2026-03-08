@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Suraj Saikia</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+<style>
+
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+    background: linear-gradient(135deg,#dbeafe,#f0f9ff);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    }
+
+    /* HERO SECTION */
+
+    .hero{
+    text-align:center;
+    padding:20px 20px;
+    }
+
+    .hero h1{
+    font-size:48px;
+    color:#0f172a;
+    }
+
+    .hero h3{
+    color:#475569;
+    margin:10px;
+    }
+
+    .hero img{
+    width:180px;
+    border-radius:50%;
+    border:4px solid #1e3a8a;
+    }
+
+    /* MAIN CARD */
+
+    .main{
+    max-width:auto;
+    margin:10px;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    /* SECTION */
+
+    /* section{
+    margin-bottom:30px;
+    align-content: center;
+    } */
+
+    section h2{
+    margin-bottom:10px;
+    color:#1e3a8a;
+    }
+
+    .foot{
+        text-align: center;
+    }
+
+    p{
+    line-height:1.6;
+    text-align: justify;
+    }
+
+    /* GRID */
+
+    .container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    }
+
+    /* EDUCATION */
+
+    .edu ul{
+    padding-left:18px;
+    font-size:16px;
+    }
+
+    /* SKILLS */
+
+    .skills ul{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    list-style:none;
+    }
+
+    .skills li{
+    background:#e0ecff;
+    padding:8px 12px;
+    border-radius:20px;
+    font-size:14px;
+    }
+
+    .skills i{
+    margin-right:6px;
+    }
+
+    /* PERSONAL DETAILS */
+
+    .p_d address{
+    font-style:normal;
+    margin-bottom:10px;
+    }
+
+    /* CONTACT FORM */
+
+    .contact form{
+    display:flex;
+    flex-direction:column;
+    max-width:450px;
+    margin: auto;
+    }
+
+    .contact input,
+    .contact textarea{
+    margin:6px 0;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    }
+
+    .contact button{
+    margin-top:10px;
+    padding:10px;
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    }
+
+    .contact button:hover{
+    background:#1d4ed8;
+    }
+
+    /* FOOTER */
+
+    footer{
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+    }
+
+    footer i{
+    margin:0 10px;
+    font-size:22px;
+    color:#0f172a;
+    transition:0.3s;
+    }
+
+    footer i:hover{
+    transform:scale(1.2);
+    color:#1e3a8a;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:700px){
+
+    .container{
+    grid-template-columns:1fr;
+    }
+
+    .hero h1{
+    font-size:36px;
+    }
+
+    .main{
+    margin:20px;
+    }
+
+    }
+
+</style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Suraj Saikia</h1>
+        <h3>B.Tech CSE Student</h3>
+        <img src="1.JPG" alt="Portfolio Image">
+    </div>
+
+    <div class="main">
+        <section class="abt">
+            <h2>About Me</h2>
+            <p>
+            Hi, I'm Suraj. I'm a second-year B.Tech student with a deep passion for computer science and software development.
+            I enjoy learning new technologies and building projects using programming languages like C, C++, Java and Python.
+            My goal is to become a skilled software engineer and contribute to solving real-world problems through technology.
+            </p>
+        </section>
+
+        <div class="container">
+            <section class="edu">
+                <h2>Education</h2>
+                <ul>
+                    <li>B.Tech — Dhemaji Engineering College (2024-2028)</li>
+                    <li>Higher Secondary — Padmasaraswati Vidya Mandir (2023)</li>
+                    <li>HSLC — Sankardev Sishu Niketan (2021)</li>
+                </ul>
+            </section>
+
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><i class="fa-solid fa-code"></i>C / C++</li>
+                    <li><i class="fa-brands fa-java"></i>Java</li>
+                    <li><i class="fa-brands fa-python"></i>Python</li>
+                    <li><i class="fa-brands fa-html5"></i>HTML</li>
+                    <li><i class="fa-brands fa-css3-alt"></i>CSS</li>
+                    <li><i class="fa-solid fa-database"></i>Data Structures</li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="p_d">
+            <h2>Personal Details</h2>
+            <address>
+                Sissiborgaon, Chowkhamting Gaon <br>
+                Dhemaji, Assam (787110)
+            </address>
+            <p>Email: 2005surajsaikia@gmail.com</p>
+            <p>Phone: 9954406550</p>
+        </section>
+
+        <!-- <section class="contact">
+            <form action="https://formspree.io/f/mlgpdwyl" method="POST">
+                <h2>Contact Me</h2>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required style="resize:none;"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section> -->
+
+    </div>
+
+    <footer>
+        <a href="https://www.instagram.com/__xuraj__xaikia__89" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://github.com/surajsaikia2005" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/suraj-saikia-8a4438379" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=2005surajsaikia@gmail.com" target="_blank">
+        <i class="fas fa-envelope"></i>
+        </a>
+
+        <p class="foot" style="margin-top:10px;font-size:14px;">
+        © 2026 Suraj Saikia. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
